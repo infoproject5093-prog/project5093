@@ -1,140 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enlaces oficiales de Project 5093 LLC">
+  <title>Project 5093 LLC</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --navy: #071426;
+      --blue: #1f5fbf;
+      --text: #142033;
+      --muted: #667085;
+      --line: #e7eaf0;
+      --white: #ffffff;
+      --background: #f4f6f9;
+    }
 
-<title>Project 5093 LLC</title>
+    * {
+      box-sizing: border-box;
+    }
 
-<style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+    }
 
-body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#111827;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-}
+    .container {
+      width: min(100%, 760px);
+      min-height: 100vh;
+      margin: 0 auto;
+      background: var(--white);
+      box-shadow: 0 0 40px rgba(7, 20, 38, 0.08);
+    }
 
-.card{
+    .banner {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
 
-    width:360px;
-    background:#1f2937;
-    border-radius:20px;
-    padding:40px;
-    text-align:center;
-    box-shadow:0 0 40px rgba(0,0,0,.35);
+    .content {
+      padding: 0 24px 36px;
+      text-align: center;
+    }
 
-}
+    .logo {
+      width: 145px;
+      height: 145px;
+      object-fit: cover;
+      border-radius: 24px;
+      background: white;
+      border: 5px solid white;
+      margin-top: -58px;
+      box-shadow: 0 12px 28px rgba(7, 20, 38, 0.18);
+    }
 
-.logo{
+    h1 {
+      margin: 18px 0 8px;
+      font-size: 34px;
+      color: var(--navy);
+    }
 
-font-size:55px;
+    .subtitle {
+      max-width: 520px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+    }
 
-}
+    .links {
+      display: grid;
+      gap: 14px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
 
-h1{
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 64px;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: white;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 6px 18px rgba(7, 20, 38, 0.05);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
 
-margin-top:15px;
-margin-bottom:8px;
+    .link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(7, 20, 38, 0.10);
+    }
 
-}
+    .link.whatsapp {
+      background: var(--navy);
+      color: white;
+      border-color: var(--navy);
+    }
 
-p{
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
 
-color:#d1d5db;
+    .icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: #edf3fb;
+      font-size: 19px;
+      font-weight: 700;
+    }
 
-}
+    .whatsapp .icon {
+      background: rgba(255,255,255,0.14);
+    }
 
-.button{
+    .arrow {
+      font-size: 23px;
+      opacity: 0.55;
+    }
 
-display:block;
+    footer {
+      margin-top: 30px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: #8a94a3;
+      font-size: 12px;
+      line-height: 1.6;
+    }
 
-background:#2563eb;
+    @media (max-width: 520px) {
+      .banner {
+        height: 180px;
+      }
 
-color:white;
+      .content {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
 
-text-decoration:none;
+      .logo {
+        width: 118px;
+        height: 118px;
+        margin-top: -48px;
+        border-radius: 20px;
+      }
 
-padding:16px;
-
-margin-top:18px;
-
-border-radius:12px;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-.button:hover{
-
-background:#1d4ed8;
-transform:scale(1.03);
-
-}
-
-.footer{
-
-margin-top:35px;
-
-font-size:13px;
-
-color:#9ca3af;
-
-}
-
-</style>
-
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<div class="card">
+    <img class="banner" src="banner.jpg" alt="Project 5093 LLC">
 
-<div class="logo">🚀</div>
+    <main class="content">
 
-<h1>Project 5093 LLC</h1>
+      <img class="logo" src="logo.jpg" alt="Logo de Project 5093 LLC">
 
-<p>
+      <h1>Project 5093 LLC</h1>
 
-Helping businesses grow through consulting, AI, taxes, automation and digital solutions.
+      <p class="subtitle">
+        Consulting, AI, taxes, automation and digital solutions.
+        Encuentra aquí nuestros enlaces oficiales.
+      </p>
 
-</p>
+      <div class="links">
 
-<a class="button" href="#">
-📲 WhatsApp
-</a>
+        <a class="link whatsapp"
+           href="https://wa.me/message/2UFD6LBBOR3SC1"
+           target="_blank"
+           rel="noopener noreferrer">
+          <div class="left">
+            <div class="icon">W</div>
+            <span>WhatsApp Business</span>
+          </div>
+          <div class="arrow">›</div>
+        </a>
 
-<a class="button" href="#">
-🌐 Website
-</a>
+        <a class="link"
+           href="https://www.facebook.com/share/19QLa7XkHu/?mibextid=wwXIfr"
+           target="_blank"
+           rel="noopener noreferrer">
+          <div class="left">
+            <div class="icon">f</div>
+            <span>Facebook</span>
+          </div>
+          <div class="arrow">›</div>
+        </a>
 
-<a class="button" href="#">
-📘 Facebook
-</a>
+        <a class="link"
+           href="https://www.instagram.com/ricardoogonzalez?utm_source=qr"
+           target="_blank"
+           rel="noopener noreferrer">
+          <div class="left">
+            <div class="icon">◎</div>
+            <span>Instagram</span>
+          </div>
+          <div class="arrow">›</div>
+        </a>
 
-<a class="button" href="#">
-📸 Instagram
-</a>
+      </div>
 
-<a class="button" href="#">
-🎵 TikTok
-</a>
+      <footer>
+        © 2026 Project 5093 LLC. All rights reserved.
+      </footer>
 
-<div class="footer">
-
-© 2026 Project 5093 LLC
-
-</div>
-
-</div>
-
+    </main>
+  </div>
 </body>
-
 </html>
